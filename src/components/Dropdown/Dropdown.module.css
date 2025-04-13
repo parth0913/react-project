@@ -1,0 +1,73 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: medium;
+    z-index: 1;
+  }
+  
+  .button {
+    padding: 0;
+    background: none; 
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .menu {
+    position: absolute;
+    right: 1px;
+    margin-top: 8px;
+    width: 217px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    font-size: small;
+  }
+  
+  .menuItem {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    text-align: left;
+  }
+  
+  .menuItem a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+  }
+  
+  .menuItem:hover {
+    background-color: #d1d5db; 
+  }
+
+  .menuItem img{
+    width: 41px;
+    max-width: 100%;
+    padding-right: 14px;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .image {
+    width: 24px; 
+    height: 24px;
+    margin-bottom: 4px; 
+  }
+  
+  
+  

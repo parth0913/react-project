@@ -1,0 +1,32 @@
+.bannerWrapper {
+  width: 88%;         
+  margin: 0 auto;     
+  display: flex;     
+  justify-content: center;
+  align-items: center;
+  padding: 0;     
+}
+
+
+.slideItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.image {
+  width: 100%;         
+  height: auto;         
+  object-fit: cover;
+  border-radius: 8px;  
+}
+
+.bannerWrapper :global(.splide__pagination) {
+  display: flex;
+  justify-content: center;   
+  gap: 8px;                  
+  position: relative;        
+  bottom: 50px;              
+}

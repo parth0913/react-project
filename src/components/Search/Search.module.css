@@ -1,0 +1,42 @@
+.searchBody {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f7f1; 
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .SearchButton {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .SearchPopup {
+    width: 84%;
+    max-width: 500px;
+    bottom: 37%;
+    position: relative;
+  }
+  
+  .SearchBox {
+    width: 100%;
+    padding: 10px 39px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-image: url(https://beta.fnp.com/icons/search-bar.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+  }
+  

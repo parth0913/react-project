@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    gap: 16px; 
+    align-items: center;
+    padding: 12px 40px;
+  }
+  
+  @media (max-width: 1024px) {
+    .navbar {
+      position: relative;
+      bottom: 0;
+      left: 0;
+  }
+  }
+
+  @media (max-width: 603px){
+    .navbar {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding: 0 24px;
+  }
+  }
+  @media (max-width: 768px){
+    .navbar{
+      bottom: 0 !important;
+      left: 0 !important;
+      padding-left: 0;
+      padding-right: 19px;
+    }
+
+    .card{
+      display: none;
+    }
+  }
+
+  @media (max-width: 360px){
+    .navbar {
+      padding-right: 19px;
+      padding-left: 0;
+  }
+  }

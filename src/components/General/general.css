@@ -1,0 +1,177 @@
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0px 31px;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+}
+
+.heading {
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  padding: 58px 31px;
+}
+
+.gap {
+  gap: 18px;
+}
+
+.grid-3-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-6-col {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+
+.flowers-row {
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+hr {
+  margin: 0;
+}
+
+/* .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-gap: 5px;
+} */
+
+.Back-img {
+  background-image: url(C:\Users\Parth\Downloads\my-app-master\my-app-master\public\images\bg.webp);
+  background-size: cover;
+}
+
+.box {
+
+  padding: 150px 100px 15px;
+  border-radius: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.fav {
+  background-image: url(C:\Users\Parth\Downloads\my-app-master\my-app-master\public\images\bg.webp);
+  background-size: cover;
+  padding: 100px;
+  border-radius: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.Surprise-bg {
+  background-image: url(https://beta.fnp.com/assets/images/custom/flowers_24/Plan%20the%20Perfect%20Surprise/Background.jpg);
+  background-size: cover;
+  padding: 137px 100px 15px;
+  border-radius: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.bg {
+  background-image: none;
+  background-size: cover;
+  padding: 150px 100px 50px;
+  border-radius: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-img,
+.card-img-top {
+  border-radius: 20px;
+}
+
+.category-gap {
+  gap: 24px;
+}
+
+@media (max-width: 1280px) {
+  .box {
+    padding: 74px 74px 20px;
+  }
+
+  .bg {
+    padding: 74px;
+  }
+
+  .heading {
+    padding: 0 31px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg {
+    padding: 10px;
+    padding-top: 66px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .fav {
+    padding: 57px 0;
+  }
+
+  .box {
+    padding: 42px 0 14px;
+    padding-top: 66px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .flowers-row {
+    width: 100%;
+    overflow: auto;
+    justify-content: left;
+    padding: 0 30px;
+  }
+
+  .Surprise-bg img {
+    width: 71%;
+  }
+
+  .Surprise-bg {
+    padding: 9px;
+    padding-top: 66px;
+    display: grid;
+  }
+
+  .card-img,
+  .card-img-bottom,
+  .card-img-top {
+    width: 91%;
+  }
+
+  .grid-6-col {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0;
+    overflow: auto;
+  }
+
+  .flowers-row img {
+    width: 9rem;
+  }
+
+  .grid-6-col img {
+    width: 8rem;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+}
