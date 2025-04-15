@@ -1,42 +1,21 @@
-.navbar {
-    display: flex;
-    gap: 16px; 
-    align-items: center;
-    padding: 12px 40px;
-  }
-  
-  @media (max-width: 1024px) {
-    .navbar {
-      position: relative;
-      bottom: 0;
-      left: 0;
-  }
-  }
+.linksnavbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: white;
+}
 
-  @media (max-width: 603px){
-    .navbar {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      padding: 0 24px;
-  }
-  }
-  @media (max-width: 768px){
-    .navbar{
-      bottom: 0 !important;
-      left: 0 !important;
-      padding-left: 0;
-      padding-right: 19px;
-    }
-
-    .card{
-      display: none;
-    }
-  }
-
-  @media (max-width: 360px){
-    .navbar {
-      padding-right: 19px;
-      padding-left: 0;
-  }
-  }
+.mobileNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px solid #ddd;
+  z-index: 999;
+}

@@ -27,12 +27,31 @@ const allLinks = [
   }
 ];
 
+const extraMobileLinks = [
+  { type: "link", label: "Home", imageSrc: "https://beta.fnp.com/icons/fnp-gift.svg", url: "/" },
+  { type: "link", label: "All Gifts", imageSrc: "https://beta.fnp.com/icons/gift-box.svg", url: "/all-gifts" },
+  { type: "link", label: "AI Chat", imageSrc: "https://beta.fnp.com/icons/giftAssistant.svg", url: "/chat" },
+  { type: "link", label: "Same Day", imageSrc: "https://beta.fnp.com/icons/same-day-desktop.svg", url: "/same-day-delivery" },
+  { type: "link", label: "Corporate", imageSrc: "https://beta.fnp.com/icons/corporate-gift.svg", url: "/corporate" },
+  { 
+    type: "dropdown", label: "More", imageSrc: "https://beta.fnp.com/icons/more-square.svg", options: [
+      { label: "Reminder", imageSrc: "https://beta.fnp.com/icons/reminder.svg", url: "#" },
+      { label: "Start an FNP Franchise", imageSrc: "https://beta.fnp.com/icons/FNP-franchise.svg", url: "#" },
+      { label: "Become a Vendor", imageSrc: "https://beta.fnp.com/icons/become-a-vendor.svg", url: "#" },
+      { label: "Birthday/Wedding Decor", imageSrc: "https://beta.fnp.com/icons/balloon-birthday-wedding-decor.svg", url: "#" },
+      { label: "Media", imageSrc: "https://beta.fnp.com/icons/media.svg", url: "#" },
+    ]
+  }
+];
+
 const Links = () => {
   const [filteredLinks, setFilteredLinks] = useState([]);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 853);
 
   useEffect(() => {
-    const filterLinks = () => {
+    const handleResize = () => {
       const mobileView = window.innerWidth <= 853;
+      setIsMobile(mobileView);
 
       const updatedLinks = mobileView
         ? allLinks.filter(link => !["Same Day", "Corporate", "More"].includes(link.label)).map(link => ({ ...link, label: "" }))
@@ -41,21 +60,29 @@ const Links = () => {
       setFilteredLinks(updatedLinks);
     };
 
-    filterLinks(); 
-
-    window.addEventListener("resize", filterLinks); 
-
-    return () => window.removeEventListener("resize", filterLinks); 
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   if (!filteredLinks.length) return null;
 
   return (
-    <nav className={styles.navbar}>
-      {filteredLinks.map((item, index) => (
-        <LinksCard key={index} {...item} />
-      ))}
-    </nav>
+    <>
+      <nav className={styles.linksnavbar}>
+        {filteredLinks.map((item, index) => (
+          <LinksCard key={index} {...item} />
+        ))}
+      </nav>
+
+      {isMobile && (
+        <nav className={styles.mobileNav}>
+          {extraMobileLinks.map((item, index) => (
+            <LinksCard key={`mobile-${index}`} {...{ ...item, label: "" }} />
+          ))}
+        </nav>
+      )}
+    </>
   );
 };
 
