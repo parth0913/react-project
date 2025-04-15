@@ -78,7 +78,7 @@ const Categories = () => {
 
   const options = {
     perPage: 1,
-    gap: '1rem',
+    gap: '40px',
     pagination:false
   };
 
