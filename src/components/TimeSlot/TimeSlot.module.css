@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.card.active {
+  border-color: #eaeaea;
+  background-color: #fdfdfd;
+  /* box-shadow: 0 0 0 2px #c9e2c9; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.header input[type="radio"] {
+  margin-top: 0;
+  accent-color: #3b621f;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.type {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.description {
+  font-size: 12px;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #222;
+  white-space: nowrap;
+}
+
+.slotSection {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slotTitle {
+  font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #585858;
+    padding-left: 14px;
+}
+
+.slot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  padding: 6px 12px;
+  /* border: 1px solid #ddd; */
+  border-radius: 6px;
+  cursor: pointer;
+  /* transition: background 0.3s; */
+}
+
+.slot:hover {
+  background-color: #f1f1f1;
+}
+
+.slot input[type="radio"] {
+  accent-color: #3b621f;
+}
+
+.noSlots {
+  color: #999;
+  font-style: italic;
+}

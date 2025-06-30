@@ -1,0 +1,92 @@
+.flex{
+    display: flex;
+}
+
+.gap-12{
+    gap: 0;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.py-16 {
+    padding-top: 20px ;
+    padding-bottom: 1rem;
+}
+.px-12 {
+    padding-left: .75rem ;
+    padding-right: .75rem;
+}
+.border {
+    border-width: 1px ;
+}
+.rounded-xl {
+    border-radius: .75rem;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+
+.my-2 {
+    margin-top: .0125rem;
+    margin-bottom: .0125rem;
+}
+.relative {
+    position: relative;
+}
+
+.w-full {
+    width: 100% !important;
+}
+
+.gap-8 {
+    gap: .5rem !important;
+}
+
+.width-100{
+    width: 11%;
+}
+
+.width-100 img{
+    width: 100%;
+}
+
+.rounded-full {
+    border-radius: 100px !important;
+}
+
+.w-\[24px\] {
+    width: 15px !important;
+}
+
+.h-\[24px\] {
+    height: 15px !important;
+}
+
+.text-fnp-500, .text-fnp-600 {
+    --tw-text-opacity: 1 !important;
+}
+
+.text-fnp-500 {
+    color: rgb(25 26 11/ 1) !important;
+}
+.font-500 {
+    font-weight: 500 !important;
+}
+.text-12 {
+    font-size: .75rem !important;
+}
+.w-\[80\%\] {
+    width: 80% !important;
+}
+
+@media (min-width: 64rem) {
+    .md\:gap-16 {
+        gap: 1rem !important;
+    }
+}
+
