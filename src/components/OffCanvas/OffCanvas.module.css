@@ -1,0 +1,21 @@
+.offcanvasButton {
+  width: 13px;
+  height: 14px;
+  color: black;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.offcanvasButton:hover {
+  background-color: #f2f2f2;
+  color: black;
+  border: 1px solid black;
+}

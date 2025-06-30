@@ -1,0 +1,306 @@
+.topCont {
+  padding: 0 7rem 8.7rem;
+  position: relative;
+  top: 115px;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  /* padding: 0 7rem 0 7rem; */
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.galleryWrapper {
+  display: flex;
+  gap: 1rem;
+  position: sticky;
+  top: 100px;
+  align-items: flex-start;
+}
+
+.ButtonsWrapper {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  background: white;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.unsticky {
+  position: static !important;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.thumb {
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.selectedThumb {
+  border-color: black;
+  width: 92px;
+  border-radius: 8px;
+}
+
+.mainImageWrapper {
+  flex: 1;
+}
+
+.mainImage {
+  width: 540px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+
+.right {
+  flex: 1;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 0.5rem;
+  font-size: 20px;
+}
+
+.discount {
+  font-size: 20px;
+  color: #3a8a1f;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.rating {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #2d6a4f;
+}
+
+.comboOptions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.comboOption {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+}
+
+.comboSelected {
+  border: 2px solid #6a994e;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+}
+
+.comboOption img {
+  width: 80px;
+  border-radius: 8px;
+  margin-bottom: 0.3rem;
+}
+
+/* .location {
+  margin-bottom: 1rem;
+}
+
+.location label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.location select,
+.location input {
+  width: 100%;
+  height: 50px;
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+} */
+.Slot {
+  margin-bottom: 1rem;
+}
+
+.Slot label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.Slot select,
+.Slot input {
+  width: 100%;
+  height: 50px;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.addToCart {
+  flex: 1;
+  background-color: transparent;
+  border: 2px solid #6a994e;
+  color: #6a994e;
+  font-weight: 700;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addToCart:hover {
+  background-color: rgb(230, 249, 199);
+  color: darkolivegreen;
+}
+
+.addToCart img {
+  margin: 0px 15px 5px 0px;
+}
+
+.buyNow {
+  flex: 1;
+  background-color: #6a994e;
+  border: none;
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.deliveryTimer {
+  font-size: 0.9rem;
+  color: #d00000;
+  font-weight: 600;
+}
+
+.deliveryTimer span {
+  font-weight: 800;
+}
+
+.locationBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  /* overflow: hidden; */
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.loc {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgb(222, 221, 221);
+  border-radius: 8px;
+}
+
+/* .locConent {
+  display: flex;
+}
+
+.icon {
+  color: #999;
+  cursor: pointer;
+  padding-right: 25px;
+}
+
+.icon img{
+  width: 24px;
+  height: 24px;
+}
+
+.text{
+  color: #333333c9;
+  font-size: 16px;
+}
+
+.locArrow {
+  position: absolute;
+  right: 117px;
+  color: #999;
+  cursor: pointer;
+} */
+
+.selectWrapper {
+  width: 10%;
+  min-width: 78px;
+  border-right: 1px solid #e2e2e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background-color: white;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.input {
+  width: 90%;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.clearBtn {
+  position: absolute;
+  right: 10px;
+  color: #999;
+  cursor: pointer;
+}
+
+.Extras {
+  padding: 20px;
+}
+
+.widgets {
+  padding: 20px;
+}

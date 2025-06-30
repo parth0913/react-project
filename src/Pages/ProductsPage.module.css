@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    gap: 20px;
+    position: sticky;
+    align-items: flex-start;
+  }
+
+  /* .filterWrapper{
+  display: flex;
+  gap: 1rem;
+  position: sticky;
+  top: 100px;
+  align-items: flex-start;
+  } */
+
+  .topdiv{
+    padding: 0 40px;
+    position: relative;
+    top: 115px;
+}
+  
+  .sidebar {
+    width: 25%;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    height: 100%;
+  }
+  
+  .filterHeading {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    padding: 16px 20px;
+  }
+  
+  .filterButton {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .main {
+    width: 75%;
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .filterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clearAllButton {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 15px 0 0;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.metaInfo {
+  font-size: 16 px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.separator {
+  color: #ccc;
+  font-size: 16px;
+}
+
+.sortDropdown {
+  font-size: 14px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 12px;
+}
+
+.reviewCount{
+  color: blue;
+  cursor: pointer;
+}
