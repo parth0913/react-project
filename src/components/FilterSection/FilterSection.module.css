@@ -1,0 +1,42 @@
+.section {
+  border-top: 1px solid #f1ebeb;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.toggleIcon {
+  font-size: 22px; 
+  font-weight: normal;
+  line-height: 1;
+}
+
+.options {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.option {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(68 68 68/ 1);
+  cursor: pointer;
+}
+
+.option input[type="checkbox"] {
+  width: 18px; 
+  height: 18px;
+  accent-color: rgb(205, 213, 116)!important;
+  cursor: pointer;
+}
+
