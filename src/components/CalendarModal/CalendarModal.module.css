@@ -1,0 +1,114 @@
+/* Full control over modal dialog */
+.customModalDialog {
+    max-width: 361px;
+    margin: auto;
+}
+
+/* Full control over modal box */
+.customModalContent {
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    animation: fadeInUp 0.3s ease-in-out;
+}
+
+/* Optional: Custom backdrop */
+.customBackdrop {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Header */
+.modalHeader {
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Close button */
+.closeBtn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+    position: relative;
+    left: 64px;
+    bottom: 6px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+/* Body */
+.modalBody {
+    padding: 0px;
+}
+
+/* Trigger button styling */
+.triggerButton {
+    border: none;
+    background-color: white;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #efe4e4;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.triggerButton:hover {
+    background-color: #f0f0f0;
+}
+
+.locConent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.locArrow {
+    font-size: 20px;
+    opacity: 0.6;
+    position: relative;
+    left: 10px;
+}
+
+/* Optional animation */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
